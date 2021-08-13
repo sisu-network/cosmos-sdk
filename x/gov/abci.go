@@ -10,6 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/gov/types"
 )
 
+
 // EndBlocker called every block, process inflation, update validator set.
 func EndBlocker(ctx sdk.Context, keeper keeper.Keeper) {
 	defer telemetry.ModuleMeasureSince(types.ModuleName, time.Now(), telemetry.MetricKeyEndBlocker)

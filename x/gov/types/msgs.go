@@ -25,6 +25,7 @@ var (
 	_          types.UnpackInterfacesMessage = &MsgSubmitProposal{}
 )
 
+
 // NewMsgSubmitProposal creates a new MsgSubmitProposal.
 //nolint:interfacer
 func NewMsgSubmitProposal(content Content, initialDeposit sdk.Coins, proposer sdk.AccAddress) (*MsgSubmitProposal, error) {
