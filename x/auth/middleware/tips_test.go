@@ -216,6 +216,7 @@ func (s *MWTestSuite) mkTipperTxBuilder(
 
 	// Actually sign the data.
 	signerData := authsigning.SignerData{
+		Address:       sdk.AccAddress(tipperPriv.PubKey().Address()),
 		ChainID:       chainID,
 		AccountNumber: accNum,
 		Sequence:      accSeq,
@@ -261,6 +262,7 @@ func mkFeePayerTxBuilder(
 
 	// Actually sign the data.
 	signerData := authsigning.SignerData{
+		Address:       sdk.AccAddress(feePayerPriv.PubKey().Address()),
 		ChainID:       chainID,
 		AccountNumber: accNum,
 		Sequence:      accSeq,

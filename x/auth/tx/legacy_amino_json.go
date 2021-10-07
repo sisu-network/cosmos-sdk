@@ -5,7 +5,6 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	typestx "github.com/cosmos/cosmos-sdk/types/tx"
 	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
 	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
 	"github.com/cosmos/cosmos-sdk/x/auth/signing"
@@ -54,13 +53,18 @@ func (s signModeLegacyAminoJSONHandler) GetSignBytes(mode signingtypes.SignMode,
 	if addr == nil {
 		return nil, sdkerrors.Wrap(sdkerrors.ErrInvalidRequest, "got empty address in SIGN_MODE_LEGACY_AMINO_JSON handler")
 	}
-	if tipTx, ok := tx.(typestx.TipTx); ok && tipTx.GetTip() != nil {
-		isTipper = tipTx.GetTip().Tipper == addr.String()
+	if protoTx.GetTip() != nil {
+		isTipper = protoTx.GetTip().Tipper == addr.String()
+	}
+
+	seq, err := getSequence(protoTx, addr)
+	if err != nil {
+		return nil, err
 	}
 
 	if isTipper {
 		return legacytx.StdSignBytes(
-			data.ChainID, data.AccountNumber, data.Sequence, protoTx.GetTimeoutHeight(),
+			data.ChainID, data.AccountNumber, seq, protoTx.GetTimeoutHeight(),
 			// The tipper signs over 0 fee and 0 gas, by convention.
 			legacytx.StdFee{Amount: sdk.Coins{}, Gas: 0},
 			tx.GetMsgs(), protoTx.GetMemo(),
@@ -68,8 +72,24 @@ func (s signModeLegacyAminoJSONHandler) GetSignBytes(mode signingtypes.SignMode,
 	}
 
 	return legacytx.StdSignBytes(
-		data.ChainID, data.AccountNumber, data.Sequence, protoTx.GetTimeoutHeight(),
+		data.ChainID, data.AccountNumber, seq, protoTx.GetTimeoutHeight(),
 		legacytx.StdFee{Amount: protoTx.GetFee(), Gas: protoTx.GetGas()},
 		tx.GetMsgs(), protoTx.GetMemo(),
 	), nil
+}
+
+// getSequence retrieves the sequence of the given address from the protoTx's
+// signer infos.
+func getSequence(protoTx *wrapper, addr sdk.AccAddress) (uint64, error) {
+	sigsV2, err := protoTx.GetSignaturesV2()
+	if err != nil {
+		return 0, err
+	}
+	for _, si := range sigsV2 {
+		if addr.Equals(sdk.AccAddress(si.PubKey.Address())) {
+			return si.Sequence, nil
+		}
+	}
+
+	return 0, sdkerrors.ErrInvalidRequest.Wrapf("address %s not found in signer infos", addr)
 }
