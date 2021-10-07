@@ -46,20 +46,21 @@ func (s signModeLegacyAminoJSONHandler) GetSignBytes(mode signingtypes.SignMode,
 		return nil, sdkerrors.Wrapf(sdkerrors.ErrInvalidRequest, "%s does not support protobuf extension options", signingtypes.SignMode_SIGN_MODE_LEGACY_AMINO_JSON)
 	}
 
-	// We set a convention that if the tipper signs with LEGACY_AMINO_JSON, then
-	// they sign over empty fees and 0 gas.
-	var isTipper bool
 	addr := data.Address
 	if addr == nil {
 		return nil, sdkerrors.Wrapf(sdkerrors.ErrInvalidRequest, "got empty address in %s handler", signingtypes.SignMode_SIGN_MODE_LEGACY_AMINO_JSON)
-	}
-	if protoTx.GetTip() != nil {
-		isTipper = protoTx.GetTip().Tipper == addr.String()
 	}
 
 	seq, err := getSequence(protoTx, addr)
 	if err != nil {
 		return nil, err
+	}
+
+	// We set a convention that if the tipper signs with LEGACY_AMINO_JSON, then
+	// they sign over empty fees and 0 gas.
+	var isTipper bool
+	if protoTx.GetTip() != nil {
+		isTipper = protoTx.GetTip().Tipper == addr.String()
 	}
 
 	if isTipper {
