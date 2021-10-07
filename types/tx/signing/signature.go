@@ -20,8 +20,7 @@ type SignatureV2 struct {
 	// the signatures themselves for either single or multi-signatures.
 	Data SignatureData
 
-	// Sequence is the sequence of this account. Only populated in
-	// SIGN_MODE_DIRECT.
+	// Sequence is the sequence of this account.
 	Sequence uint64
 }
 

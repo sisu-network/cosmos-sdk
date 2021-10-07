@@ -208,10 +208,10 @@ func Sign(txf Factory, name string, txBuilder client.TxBuilder, overwriteSig boo
 	}
 
 	signerData := authsigning.SignerData{
+		Address:       sdk.AccAddress(pubKey.Address()),
 		ChainID:       txf.chainID,
 		AccountNumber: txf.accountNumber,
 		Sequence:      txf.sequence,
-		Address:       sdk.AccAddress(pubKey.Address()),
 	}
 
 	// For SIGN_MODE_DIRECT, calling SetSignatures calls setSignerInfos on

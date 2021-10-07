@@ -9367,7 +9367,6 @@ SignMode represents a signing mode with its own security guarantees.
 | SIGN_MODE_TEXTUAL | 2 | SIGN_MODE_TEXTUAL is a future signing mode that will verify some human-readable textual representation on top of the binary representation from SIGN_MODE_DIRECT. It is currently not supported. |
 | SIGN_MODE_DIRECT_JSON | 3 | SIGN_MODE_DIRECT_JSON specifies a signing mode which uses SignDocJSON. It is verified using a canonical JSON representation of the bytes used in SIGN_MODE_DIRECT. It is currently not supported. |
 | SIGN_MODE_DIRECT_AUX | 4 | SIGN_MODE_DIRECT_AUX specifies a signing mode which uses SignDocDirectAux. As opposed to SIGN_MODE_DIRECT, this sign mode does not require signers signing over other signers' `signer_info`. It also allows for adding Tips in transactions. |
-| SIGN_MODE_AMINO_AUX | 5 | SIGN_MODE_AMINO_AUX specifies a signing mode which uses SignDocAminoAux. |
 | SIGN_MODE_LEGACY_AMINO_JSON | 127 | SIGN_MODE_LEGACY_AMINO_JSON is a backwards compatibility mode which uses Amino JSON and will be removed in the future. |
 
 
