@@ -106,8 +106,9 @@ func printAndValidateSigs(
 				return false
 			}
 
+			var isTipper bool
 			if tipTx, ok := tx.(typestx.TipTx); ok && tipTx.GetTip() != nil {
-
+				isTipper = tipTx.GetTip().Tipper == sigAddr.String()
 			}
 
 			signingData := authsigning.SignerData{
@@ -115,6 +116,7 @@ func printAndValidateSigs(
 				AccountNumber: accNum,
 				Sequence:      accSeq,
 				SignerIndex:   i,
+				IsTipper:      isTipper,
 			}
 			err = authsigning.VerifySignature(pubKey, signingData, sig.Data, signModeHandler, sigTx)
 			if err != nil {
