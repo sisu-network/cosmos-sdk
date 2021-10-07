@@ -46,6 +46,15 @@ func (s signModeLegacyAminoJSONHandler) GetSignBytes(mode signingtypes.SignMode,
 		return nil, sdkerrors.Wrap(sdkerrors.ErrInvalidRequest, "SIGN_MODE_LEGACY_AMINO_JSON does not support protobuf extension options.")
 	}
 
+	if data.IsTipper {
+		return legacytx.StdSignBytes(
+			data.ChainID, data.AccountNumber, data.Sequence, protoTx.GetTimeoutHeight(),
+			// The tipper signs over 0 fee and 0 gas, by convention.
+			legacytx.StdFee{Amount: sdk.Coins{}, Gas: 0},
+			tx.GetMsgs(), protoTx.GetMemo(),
+		), nil
+	}
+
 	return legacytx.StdSignBytes(
 		data.ChainID, data.AccountNumber, data.Sequence, protoTx.GetTimeoutHeight(),
 		legacytx.StdFee{Amount: protoTx.GetFee(), Gas: protoTx.GetGas()},

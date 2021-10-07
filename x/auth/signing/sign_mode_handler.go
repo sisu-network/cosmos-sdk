@@ -37,4 +37,8 @@ type SignerData struct {
 
 	// SignerIndex index of signer in the signer_infos array
 	SignerIndex int
+
+	// IsTipper denotes whether the current signer is the tipper of the
+	// transaction. If the tx doesn't include any tipper, returns false.
+	IsTipper bool
 }

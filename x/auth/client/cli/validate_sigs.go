@@ -9,6 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	typestx "github.com/cosmos/cosmos-sdk/types/tx"
 	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
 	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
 )
@@ -105,10 +106,15 @@ func printAndValidateSigs(
 				return false
 			}
 
+			if tipTx, ok := tx.(typestx.TipTx); ok && tipTx.GetTip() != nil {
+
+			}
+
 			signingData := authsigning.SignerData{
 				ChainID:       chainID,
 				AccountNumber: accNum,
 				Sequence:      accSeq,
+				SignerIndex:   i,
 			}
 			err = authsigning.VerifySignature(pubKey, signingData, sig.Data, signModeHandler, sigTx)
 			if err != nil {

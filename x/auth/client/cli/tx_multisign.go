@@ -326,6 +326,7 @@ func makeBatchMultisignCmd() func(cmd *cobra.Command, args []string) error {
 				ChainID:       txFactory.ChainID(),
 				AccountNumber: txFactory.AccountNumber(),
 				Sequence:      txFactory.Sequence(),
+				SignerIndex:   i,
 			}
 
 			for _, sig := range signatureBatch {
