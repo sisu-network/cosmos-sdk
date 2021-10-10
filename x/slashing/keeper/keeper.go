@@ -3,12 +3,12 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/sisu-network/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/x/slashing/types"
 )
 
 // Keeper of the slashing store

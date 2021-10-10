@@ -4,14 +4,14 @@ import (
 	"testing"
 	"time"
 
+	tmtime "github.com/sisu-network/tendermint/types/time"
 	"github.com/stretchr/testify/require"
-	tmtime "github.com/tendermint/tendermint/types/time"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/sisu-network/cosmos-sdk/testutil/testdata"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	authtypes "github.com/sisu-network/cosmos-sdk/x/auth/types"
+	"github.com/sisu-network/cosmos-sdk/x/auth/vesting/types"
 )
 
 var (

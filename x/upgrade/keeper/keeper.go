@@ -8,17 +8,17 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/tendermint/tendermint/libs/log"
-	tmos "github.com/tendermint/tendermint/libs/os"
+	"github.com/sisu-network/tendermint/libs/log"
+	tmos "github.com/sisu-network/tendermint/libs/os"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	store "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	ibcexported "github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	"github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/store/prefix"
+	store "github.com/sisu-network/cosmos-sdk/store/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	sdkerrors "github.com/sisu-network/cosmos-sdk/types/errors"
+	clienttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/types"
+	ibcexported "github.com/sisu-network/cosmos-sdk/x/ibc/core/exported"
+	"github.com/sisu-network/cosmos-sdk/x/upgrade/types"
 )
 
 // UpgradeInfoFileName file to store upgrade information

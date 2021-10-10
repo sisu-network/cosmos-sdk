@@ -13,15 +13,15 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
-	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/rest"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	cryptocodec "github.com/sisu-network/cosmos-sdk/crypto/codec"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	simappparams "github.com/sisu-network/cosmos-sdk/simapp/params"
+	"github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/types/rest"
 )
 
 func TestBaseReq_Sanitize(t *testing.T) {

@@ -8,29 +8,29 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	authcli "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	authrest "github.com/cosmos/cosmos-sdk/x/auth/client/rest"
-	authtest "github.com/cosmos/cosmos-sdk/x/auth/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
-	bankcli "github.com/cosmos/cosmos-sdk/x/bank/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
-	ibccli "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/client/cli"
-	ibcsolomachinecli "github.com/cosmos/cosmos-sdk/x/ibc/light-clients/06-solomachine/client/cli"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	"github.com/sisu-network/cosmos-sdk/client/tx"
+	"github.com/sisu-network/cosmos-sdk/crypto/hd"
+	"github.com/sisu-network/cosmos-sdk/crypto/keyring"
+	kmultisig "github.com/sisu-network/cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	"github.com/sisu-network/cosmos-sdk/testutil"
+	clitestutil "github.com/sisu-network/cosmos-sdk/testutil/cli"
+	"github.com/sisu-network/cosmos-sdk/testutil/network"
+	"github.com/sisu-network/cosmos-sdk/testutil/testdata"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/types/rest"
+	txtypes "github.com/sisu-network/cosmos-sdk/types/tx"
+	"github.com/sisu-network/cosmos-sdk/types/tx/signing"
+	authclient "github.com/sisu-network/cosmos-sdk/x/auth/client"
+	authcli "github.com/sisu-network/cosmos-sdk/x/auth/client/cli"
+	authrest "github.com/sisu-network/cosmos-sdk/x/auth/client/rest"
+	authtest "github.com/sisu-network/cosmos-sdk/x/auth/client/testutil"
+	"github.com/sisu-network/cosmos-sdk/x/auth/legacy/legacytx"
+	bankcli "github.com/sisu-network/cosmos-sdk/x/bank/client/testutil"
+	"github.com/sisu-network/cosmos-sdk/x/bank/types"
+	ibccli "github.com/sisu-network/cosmos-sdk/x/ibc/core/04-channel/client/cli"
+	ibcsolomachinecli "github.com/sisu-network/cosmos-sdk/x/ibc/light-clients/06-solomachine/client/cli"
 )
 
 type IntegrationTestSuite struct {
@@ -100,7 +100,7 @@ func mkStdTx() legacytx.StdTx {
 
 // Create an IBC tx that's encoded as amino-JSON. Since we can't amino-marshal
 // a tx with "cosmos-sdk/MsgTransfer" using the SDK, we just hardcode the tx
-// here. But external clients might, see https://github.com/cosmos/cosmos-sdk/issues/8022.
+// here. But external clients might, see https://github.com/sisu-network/cosmos-sdk/issues/8022.
 func mkIBCStdTx() []byte {
 	ibcTx := `{
 		"account_number": "68",
@@ -554,7 +554,7 @@ func (s *IntegrationTestSuite) TestLegacyRestErrMessages() {
 
 // TestLegacyMultiSig creates a legacy multisig transaction, and makes sure
 // we can query it via the legacy REST endpoint.
-// ref: https://github.com/cosmos/cosmos-sdk/issues/8679
+// ref: https://github.com/sisu-network/cosmos-sdk/issues/8679
 func (s *IntegrationTestSuite) TestLegacyMultisig() {
 	val1 := *s.network.Validators[0]
 

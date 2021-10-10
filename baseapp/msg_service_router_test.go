@@ -4,18 +4,18 @@ import (
 	"os"
 	"testing"
 
+	abci "github.com/sisu-network/tendermint/abci/types"
+	"github.com/sisu-network/tendermint/libs/log"
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/sisu-network/cosmos-sdk/baseapp"
+	"github.com/sisu-network/cosmos-sdk/client/tx"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	"github.com/sisu-network/cosmos-sdk/testutil/testdata"
+	"github.com/sisu-network/cosmos-sdk/types/tx/signing"
+	authsigning "github.com/sisu-network/cosmos-sdk/x/auth/signing"
 )
 
 func TestRegisterMsgService(t *testing.T) {

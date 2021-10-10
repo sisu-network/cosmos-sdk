@@ -5,15 +5,15 @@ import (
 	"os"
 	"testing"
 
+	"github.com/sisu-network/tendermint/libs/log"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/baseapp"
+	"github.com/sisu-network/cosmos-sdk/codec/types"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	"github.com/sisu-network/cosmos-sdk/testutil/testdata"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
 )
 
 func TestGRPCGatewayRouter(t *testing.T) {

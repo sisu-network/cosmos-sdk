@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/tmhash"
+	"github.com/sisu-network/tendermint/crypto"
+	"github.com/sisu-network/tendermint/crypto/tmhash"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	"github.com/sisu-network/cosmos-sdk/types/errors"
 )
 
 //-------------------------------------

@@ -4,18 +4,18 @@ import (
 	"encoding/json"
 	"testing"
 
+	abci "github.com/sisu-network/tendermint/abci/types"
+	"github.com/sisu-network/tendermint/libs/log"
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	"github.com/sisu-network/cosmos-sdk/x/auth"
+	authtypes "github.com/sisu-network/cosmos-sdk/x/auth/types"
+	banktypes "github.com/sisu-network/cosmos-sdk/x/bank/types"
+	"github.com/sisu-network/cosmos-sdk/x/gov"
+	"github.com/sisu-network/cosmos-sdk/x/gov/types"
 )
 
 func TestImportExportQueues(t *testing.T) {

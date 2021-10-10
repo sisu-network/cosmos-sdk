@@ -1,16 +1,16 @@
 package keeper_test
 
 import (
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/sisu-network/tendermint/libs/log"
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
+	"github.com/sisu-network/cosmos-sdk/simapp"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramskeeper "github.com/cosmos/cosmos-sdk/x/params/keeper"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/store"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	paramskeeper "github.com/sisu-network/cosmos-sdk/x/params/keeper"
 )
 
 func testComponents() (*codec.LegacyAmino, sdk.Context, sdk.StoreKey, sdk.StoreKey, paramskeeper.Keeper) {

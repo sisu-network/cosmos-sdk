@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"testing"
 
+	abci "github.com/sisu-network/tendermint/abci/types"
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/teststaking"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/x/staking/keeper"
+	"github.com/sisu-network/cosmos-sdk/x/staking/teststaking"
+	"github.com/sisu-network/cosmos-sdk/x/staking/types"
 )
 
 func TestNewQuerier(t *testing.T) {

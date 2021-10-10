@@ -9,15 +9,15 @@ import (
 	"fmt"
 	"strings"
 
-	tmcrypto "github.com/tendermint/tendermint/crypto"
+	tmcrypto "github.com/sisu-network/tendermint/crypto"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v034auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v034"
-	v038auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v038"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/codec/legacy"
+	cryptocodec "github.com/sisu-network/cosmos-sdk/crypto/codec"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	v034auth "github.com/sisu-network/cosmos-sdk/x/auth/legacy/v034"
+	v038auth "github.com/sisu-network/cosmos-sdk/x/auth/legacy/v038"
 )
 
 const (

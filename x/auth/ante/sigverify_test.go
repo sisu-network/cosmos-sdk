@@ -3,20 +3,20 @@ package ante_test
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/ed25519"
+	kmultisig "github.com/sisu-network/cosmos-sdk/crypto/keys/multisig"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	"github.com/sisu-network/cosmos-sdk/crypto/types/multisig"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	"github.com/sisu-network/cosmos-sdk/testutil/testdata"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/types/tx/signing"
+	"github.com/sisu-network/cosmos-sdk/x/auth/ante"
+	"github.com/sisu-network/cosmos-sdk/x/auth/legacy/legacytx"
+	"github.com/sisu-network/cosmos-sdk/x/auth/types"
 )
 
 func (suite *AnteTestSuite) TestSetPubKey() {
@@ -184,10 +184,10 @@ func (suite *AnteTestSuite) TestSigVerification() {
 
 // This test is exactly like the one above, but we set the codec explicitly to
 // Amino.
-// Once https://github.com/cosmos/cosmos-sdk/issues/6190 is in, we can remove
+// Once https://github.com/sisu-network/cosmos-sdk/issues/6190 is in, we can remove
 // this, since it'll be handled by the test matrix.
 // In the meantime, we want to make double-sure amino compatibility works.
-// ref: https://github.com/cosmos/cosmos-sdk/issues/7229
+// ref: https://github.com/sisu-network/cosmos-sdk/issues/7229
 func (suite *AnteTestSuite) TestSigVerification_ExplicitAmino() {
 	suite.app, suite.ctx = createTestApp(true)
 	suite.ctx = suite.ctx.WithBlockHeight(1)

@@ -1,11 +1,11 @@
 package codec
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	codectypes "github.com/sisu-network/cosmos-sdk/codec/types"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/multisig"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
 )
 
 // RegisterInterfaces registers the sdk.Tx interface.

@@ -4,20 +4,20 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/sisu-network/tendermint/libs/log"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	connectiontypes "github.com/cosmos/cosmos-sdk/x/ibc/core/03-connection/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	porttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/05-port/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	sdkerrors "github.com/sisu-network/cosmos-sdk/types/errors"
+	capabilitykeeper "github.com/sisu-network/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/sisu-network/cosmos-sdk/x/capability/types"
+	clienttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/types"
+	connectiontypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/03-connection/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/04-channel/types"
+	porttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/05-port/types"
+	host "github.com/sisu-network/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/exported"
 )
 
 // Keeper defines the IBC channel keeper

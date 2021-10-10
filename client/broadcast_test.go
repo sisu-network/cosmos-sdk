@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/sisu-network/tendermint/crypto/tmhash"
+	"github.com/sisu-network/tendermint/mempool"
+	"github.com/sisu-network/tendermint/rpc/client/mock"
+	ctypes "github.com/sisu-network/tendermint/rpc/core/types"
+	tmtypes "github.com/sisu-network/tendermint/types"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	"github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/rpc/client/mock"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	sdkerrors "github.com/sisu-network/cosmos-sdk/types/errors"
 )
 
 type MockClient struct {

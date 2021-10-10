@@ -10,18 +10,18 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
+	tmcli "github.com/sisu-network/tendermint/libs/cli"
 	"github.com/stretchr/testify/suite"
-	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	testnet "github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/client/cli"
-	distrtestutil "github.com/cosmos/cosmos-sdk/x/distribution/client/testutil"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	"github.com/sisu-network/cosmos-sdk/testutil"
+	clitestutil "github.com/sisu-network/cosmos-sdk/testutil/cli"
+	testnet "github.com/sisu-network/cosmos-sdk/testutil/network"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/x/distribution/client/cli"
+	distrtestutil "github.com/sisu-network/cosmos-sdk/x/distribution/client/testutil"
+	minttypes "github.com/sisu-network/cosmos-sdk/x/mint/types"
 )
 
 type IntegrationTestSuite struct {

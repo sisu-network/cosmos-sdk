@@ -6,12 +6,12 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/sisu-network/cosmos-sdk/client"
+	clienttx "github.com/sisu-network/cosmos-sdk/client/tx"
+	sdkerrors "github.com/sisu-network/cosmos-sdk/types/errors"
+	"github.com/sisu-network/cosmos-sdk/types/rest"
+	"github.com/sisu-network/cosmos-sdk/x/auth/legacy/legacytx"
+	"github.com/sisu-network/cosmos-sdk/x/auth/signing"
 )
 
 type (

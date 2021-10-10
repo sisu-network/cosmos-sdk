@@ -3,16 +3,16 @@ package bank_test
 import (
 	"testing"
 
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	authtypes "github.com/sisu-network/cosmos-sdk/x/auth/types"
+	"github.com/sisu-network/cosmos-sdk/x/bank/types"
+	distrtypes "github.com/sisu-network/cosmos-sdk/x/distribution/types"
 )
 
 type (

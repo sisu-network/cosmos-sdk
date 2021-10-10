@@ -5,9 +5,9 @@ package signing
 
 import (
 	fmt "fmt"
-	types "github.com/cosmos/cosmos-sdk/codec/types"
-	types1 "github.com/cosmos/cosmos-sdk/crypto/types"
 	proto "github.com/gogo/protobuf/proto"
+	types "github.com/sisu-network/cosmos-sdk/codec/types"
+	types1 "github.com/sisu-network/cosmos-sdk/crypto/types"
 	io "io"
 	math "math"
 	math_bits "math/bits"

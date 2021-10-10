@@ -9,17 +9,17 @@ import (
 
 	ics23 "github.com/confio/ics23/go"
 	"github.com/pkg/errors"
+	"github.com/sisu-network/tendermint/light"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/light"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/version"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	commitmenttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	"github.com/sisu-network/cosmos-sdk/client/tx"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/version"
+	clienttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/types"
+	commitmenttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/23-commitment/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
 )
 
 const (

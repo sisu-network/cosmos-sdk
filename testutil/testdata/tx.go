@@ -3,9 +3,9 @@ package testdata
 import (
 	"encoding/json"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
 )
 
 // KeyTestPubAddr generates a new secp256k1 keypair.

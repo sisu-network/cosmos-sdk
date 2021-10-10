@@ -4,15 +4,15 @@ import (
 	"context"
 	"encoding/binary"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	clientutils "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/client/utils"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	ibcclient "github.com/cosmos/cosmos-sdk/x/ibc/core/client"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	sdkerrors "github.com/sisu-network/cosmos-sdk/types/errors"
+	clientutils "github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/client/utils"
+	clienttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/04-channel/types"
+	host "github.com/sisu-network/cosmos-sdk/x/ibc/core/24-host"
+	ibcclient "github.com/sisu-network/cosmos-sdk/x/ibc/core/client"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/exported"
 )
 
 // QueryChannel returns a channel end.

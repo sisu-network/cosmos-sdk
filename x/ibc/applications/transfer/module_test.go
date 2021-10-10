@@ -3,12 +3,12 @@ package transfer_test
 import (
 	"math"
 
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
+	capabilitytypes "github.com/sisu-network/cosmos-sdk/x/capability/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/applications/transfer/types"
+	channeltypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/04-channel/types"
+	host "github.com/sisu-network/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/exported"
+	ibctesting "github.com/sisu-network/cosmos-sdk/x/ibc/testing"
 )
 
 func (suite *TransferTestSuite) TestOnChanOpenInit() {

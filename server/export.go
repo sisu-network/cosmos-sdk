@@ -7,14 +7,14 @@ import (
 	"io/ioutil"
 	"os"
 
+	tmjson "github.com/sisu-network/tendermint/libs/json"
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
+	tmtypes "github.com/sisu-network/tendermint/types"
 	"github.com/spf13/cobra"
-	tmjson "github.com/tendermint/tendermint/libs/json"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	"github.com/sisu-network/cosmos-sdk/server/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
 )
 
 const (

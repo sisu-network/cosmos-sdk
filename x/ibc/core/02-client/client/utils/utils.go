@@ -3,18 +3,18 @@ package utils
 import (
 	"context"
 
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/sisu-network/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/client"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	commitmenttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	ibcclient "github.com/cosmos/cosmos-sdk/x/ibc/core/client"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	ibctmtypes "github.com/cosmos/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	sdkerrors "github.com/sisu-network/cosmos-sdk/types/errors"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/types"
+	commitmenttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/23-commitment/types"
+	host "github.com/sisu-network/cosmos-sdk/x/ibc/core/24-host"
+	ibcclient "github.com/sisu-network/cosmos-sdk/x/ibc/core/client"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/exported"
+	ibctmtypes "github.com/sisu-network/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
 )
 
 // QueryClientState returns a client state. If prove is true, it performs an ABCI store query

@@ -11,10 +11,10 @@ import (
 
 	bip39 "github.com/cosmos/go-bip39"
 
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/sisu-network/tendermint/crypto"
 
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/sisu-network/cosmos-sdk/crypto/hd"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/secp256k1"
 )
 
 type addrData struct {

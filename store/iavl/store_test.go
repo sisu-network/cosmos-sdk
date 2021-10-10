@@ -6,12 +6,12 @@ import (
 	"testing"
 
 	"github.com/cosmos/iavl"
+	abci "github.com/sisu-network/tendermint/abci/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/sisu-network/cosmos-sdk/store/types"
+	"github.com/sisu-network/cosmos-sdk/types/kv"
 )
 
 var (

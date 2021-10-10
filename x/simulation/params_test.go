@@ -5,11 +5,11 @@ import (
 	"math/rand"
 	"testing"
 
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	simtypes "github.com/sisu-network/cosmos-sdk/types/simulation"
 )
 
 func TestParamChange(t *testing.T) {

@@ -6,17 +6,17 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
-	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/client/tx"
+	"github.com/sisu-network/cosmos-sdk/crypto/hd"
+	"github.com/sisu-network/cosmos-sdk/crypto/keyring"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	txtypes "github.com/sisu-network/cosmos-sdk/types/tx"
+	signingtypes "github.com/sisu-network/cosmos-sdk/types/tx/signing"
+	"github.com/sisu-network/cosmos-sdk/x/auth/signing"
+	banktypes "github.com/sisu-network/cosmos-sdk/x/bank/types"
 )
 
 func NewTestTxConfig() client.TxConfig {

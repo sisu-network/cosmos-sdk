@@ -4,18 +4,18 @@ import (
 	"context"
 	"testing"
 
+	"github.com/sisu-network/tendermint/rpc/client/mock"
+	ctypes "github.com/sisu-network/tendermint/rpc/core/types"
+	tmtypes "github.com/sisu-network/tendermint/types"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/rpc/client/mock"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/client/utils"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	authtypes "github.com/sisu-network/cosmos-sdk/x/auth/types"
+	"github.com/sisu-network/cosmos-sdk/x/gov/client/utils"
+	"github.com/sisu-network/cosmos-sdk/x/gov/types"
 )
 
 type TxSearchMock struct {

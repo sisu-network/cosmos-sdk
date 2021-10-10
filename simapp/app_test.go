@@ -5,11 +5,11 @@ import (
 	"os"
 	"testing"
 
+	"github.com/sisu-network/tendermint/libs/log"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/sisu-network/tendermint/abci/types"
 )
 
 func TestSimAppExportAndBlockedAddrs(t *testing.T) {

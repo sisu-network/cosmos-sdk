@@ -3,11 +3,11 @@ package baseapp_test
 import (
 	"testing"
 
+	abci "github.com/sisu-network/tendermint/abci/types"
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
+	"github.com/sisu-network/cosmos-sdk/baseapp"
 )
 
 func TestValidateBlockParams(t *testing.T) {

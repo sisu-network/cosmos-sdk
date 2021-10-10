@@ -3,11 +3,11 @@ package ibctesting_test
 import (
 	"testing"
 
+	tmtypes "github.com/sisu-network/tendermint/types"
 	"github.com/stretchr/testify/require"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
-	"github.com/cosmos/cosmos-sdk/x/ibc/testing/mock"
+	ibctesting "github.com/sisu-network/cosmos-sdk/x/ibc/testing"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/testing/mock"
 )
 
 func TestCreateSortedSignerArray(t *testing.T) {

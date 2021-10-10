@@ -6,17 +6,17 @@ import (
 	"fmt"
 	"strings"
 
+	tcmd "github.com/sisu-network/tendermint/cmd/tendermint/commands"
+	"github.com/sisu-network/tendermint/libs/cli"
+	"github.com/sisu-network/tendermint/p2p"
+	pvm "github.com/sisu-network/tendermint/privval"
+	tversion "github.com/sisu-network/tendermint/version"
 	"github.com/spf13/cobra"
-	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
-	"github.com/tendermint/tendermint/libs/cli"
-	"github.com/tendermint/tendermint/p2p"
-	pvm "github.com/tendermint/tendermint/privval"
-	tversion "github.com/tendermint/tendermint/version"
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	cryptocodec "github.com/sisu-network/cosmos-sdk/crypto/codec"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
 )
 
 // ShowNodeIDCmd - ported from Tendermint, dump node ID to stdout

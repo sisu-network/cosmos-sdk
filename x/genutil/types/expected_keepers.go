@@ -3,12 +3,12 @@ package types
 import (
 	"encoding/json"
 
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/sisu-network/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	auth "github.com/cosmos/cosmos-sdk/x/auth/types"
-	bankexported "github.com/cosmos/cosmos-sdk/x/bank/exported"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	auth "github.com/sisu-network/cosmos-sdk/x/auth/types"
+	bankexported "github.com/sisu-network/cosmos-sdk/x/bank/exported"
 )
 
 // StakingKeeper defines the expected staking keeper (noalias)

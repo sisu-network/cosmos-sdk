@@ -4,19 +4,19 @@ import (
 	"testing"
 	"time"
 
+	abci "github.com/sisu-network/tendermint/abci/types"
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
+	tmtime "github.com/sisu-network/tendermint/types/time"
 	"github.com/stretchr/testify/suite"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	vesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/sisu-network/cosmos-sdk/baseapp"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	authkeeper "github.com/sisu-network/cosmos-sdk/x/auth/keeper"
+	authtypes "github.com/sisu-network/cosmos-sdk/x/auth/types"
+	vesting "github.com/sisu-network/cosmos-sdk/x/auth/vesting/types"
+	"github.com/sisu-network/cosmos-sdk/x/bank/keeper"
+	"github.com/sisu-network/cosmos-sdk/x/bank/types"
 )
 
 const (

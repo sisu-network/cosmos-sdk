@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/keeper"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
+	"github.com/sisu-network/cosmos-sdk/types/kv"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/keeper"
+	host "github.com/sisu-network/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/exported"
 )
 
 var _ ClientUnmarshaler = (*keeper.Keeper)(nil)

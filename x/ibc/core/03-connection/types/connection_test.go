@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/03-connection/types"
-	commitmenttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
+	clienttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/03-connection/types"
+	commitmenttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/23-commitment/types"
+	ibctesting "github.com/sisu-network/cosmos-sdk/x/ibc/testing"
 )
 
 var (

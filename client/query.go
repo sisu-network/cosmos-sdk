@@ -7,12 +7,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
+	abci "github.com/sisu-network/tendermint/abci/types"
+	tmbytes "github.com/sisu-network/tendermint/libs/bytes"
+	rpcclient "github.com/sisu-network/tendermint/rpc/client"
 
-	"github.com/cosmos/cosmos-sdk/store/rootmulti"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/store/rootmulti"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
 )
 
 // GetNode returns an RPC client. If the context's client is not defined, an

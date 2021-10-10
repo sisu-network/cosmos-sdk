@@ -3,10 +3,10 @@ package client
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/keeper"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/keeper"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/exported"
 )
 
 // InitGenesis initializes the ibc client submodule's state from a provided genesis
@@ -47,7 +47,7 @@ func InitGenesis(ctx sdk.Context, k keeper.Keeper, gs types.GenesisState) {
 	k.SetNextClientSequence(ctx, gs.NextClientSequence)
 
 	// NOTE: localhost creation is specifically disallowed for the time being.
-	// Issue: https://github.com/cosmos/cosmos-sdk/issues/7871
+	// Issue: https://github.com/sisu-network/cosmos-sdk/issues/7871
 }
 
 // ExportGenesis returns the ibc client submodule's exported genesis.

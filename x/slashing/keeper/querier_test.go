@@ -5,14 +5,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	abci "github.com/sisu-network/tendermint/abci/types"
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	"github.com/cosmos/cosmos-sdk/x/slashing/testslashing"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	"github.com/sisu-network/cosmos-sdk/x/slashing/keeper"
+	"github.com/sisu-network/cosmos-sdk/x/slashing/testslashing"
+	"github.com/sisu-network/cosmos-sdk/x/slashing/types"
 )
 
 func TestNewQuerier(t *testing.T) {

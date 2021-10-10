@@ -3,7 +3,7 @@ package types
 import (
 	"reflect"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
 )
 
 type attribute struct {

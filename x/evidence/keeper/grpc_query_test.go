@@ -3,12 +3,12 @@ package keeper_test
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/evidence/exported"
-	"github.com/cosmos/cosmos-sdk/x/evidence/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/types/query"
+	"github.com/sisu-network/cosmos-sdk/x/evidence/exported"
+	"github.com/sisu-network/cosmos-sdk/x/evidence/types"
 
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
+	tmbytes "github.com/sisu-network/tendermint/libs/bytes"
 )
 
 func (suite *KeeperTestSuite) TestQueryEvidence() {

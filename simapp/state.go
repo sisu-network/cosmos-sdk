@@ -8,15 +8,15 @@ import (
 	"math/rand"
 	"time"
 
-	tmjson "github.com/tendermint/tendermint/libs/json"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmjson "github.com/sisu-network/tendermint/libs/json"
+	tmtypes "github.com/sisu-network/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/secp256k1"
+	simappparams "github.com/sisu-network/cosmos-sdk/simapp/params"
+	"github.com/sisu-network/cosmos-sdk/types/module"
+	simtypes "github.com/sisu-network/cosmos-sdk/types/simulation"
+	authtypes "github.com/sisu-network/cosmos-sdk/x/auth/types"
 )
 
 // AppStateFn returns the initial application state using a genesis or the simulation parameters.

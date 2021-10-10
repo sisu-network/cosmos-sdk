@@ -4,18 +4,18 @@ import (
 	"testing"
 	"time"
 
+	tmbytes "github.com/sisu-network/tendermint/libs/bytes"
+	tmproto "github.com/sisu-network/tendermint/proto/tendermint/types"
+	tmtypes "github.com/sisu-network/tendermint/types"
 	"github.com/stretchr/testify/suite"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	ibctmtypes "github.com/cosmos/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
-	ibctestingmock "github.com/cosmos/cosmos-sdk/x/ibc/testing/mock"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	clienttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/types"
+	ibctmtypes "github.com/sisu-network/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
+	ibctesting "github.com/sisu-network/cosmos-sdk/x/ibc/testing"
+	ibctestingmock "github.com/sisu-network/cosmos-sdk/x/ibc/testing/mock"
 )
 
 const (

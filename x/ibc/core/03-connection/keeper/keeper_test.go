@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/03-connection/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/03-connection/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/exported"
+	ibctesting "github.com/sisu-network/cosmos-sdk/x/ibc/testing"
 )
 
 type KeeperTestSuite struct {

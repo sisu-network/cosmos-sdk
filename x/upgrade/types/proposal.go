@@ -3,8 +3,8 @@ package types
 import (
 	"fmt"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	gov "github.com/cosmos/cosmos-sdk/x/gov/types"
+	codectypes "github.com/sisu-network/cosmos-sdk/codec/types"
+	gov "github.com/sisu-network/cosmos-sdk/x/gov/types"
 )
 
 const (

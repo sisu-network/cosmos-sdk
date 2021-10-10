@@ -9,12 +9,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/types/errors"
+	"github.com/sisu-network/cosmos-sdk/version"
 )
 
 func Cmd() *cobra.Command {
@@ -125,7 +125,7 @@ func AddrCmd() *cobra.Command {
 		Use:   "addr [address]",
 		Short: "Convert an address between hex and bech32",
 		Long: fmt.Sprintf(`Convert an address between hex encoding and bech32.
-			
+
 Example:
 $ %s debug addr cosmos1e0jnq2sun3dzjh8p2xq95kk0expwmd7shwjpfg
 			`, version.AppName),
@@ -169,7 +169,7 @@ func RawBytesCmd() *cobra.Command {
 		Use:   "raw-bytes [raw-bytes]",
 		Short: "Convert raw bytes output (eg. [10 21 13 255]) to hex",
 		Long: fmt.Sprintf(`Convert raw-bytes to hex.
-			
+
 Example:
 $ %s debug raw-bytes [72 101 108 108 111 44 32 112 108 97 121 103 114 111 117 110 100]
 			`, version.AppName),

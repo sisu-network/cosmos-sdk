@@ -11,16 +11,16 @@ import (
 	"math/rand"
 	"testing"
 
+	abci "github.com/sisu-network/tendermint/abci/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
-	snapshottypes "github.com/cosmos/cosmos-sdk/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/store/iavl"
-	sdkmaps "github.com/cosmos/cosmos-sdk/store/internal/maps"
-	"github.com/cosmos/cosmos-sdk/store/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	snapshottypes "github.com/sisu-network/cosmos-sdk/snapshots/types"
+	"github.com/sisu-network/cosmos-sdk/store/iavl"
+	sdkmaps "github.com/sisu-network/cosmos-sdk/store/internal/maps"
+	"github.com/sisu-network/cosmos-sdk/store/types"
+	sdkerrors "github.com/sisu-network/cosmos-sdk/types/errors"
 )
 
 func TestStoreType(t *testing.T) {

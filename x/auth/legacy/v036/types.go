@@ -2,7 +2,7 @@
 // nolint
 package v036
 
-import v034auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v034"
+import v034auth "github.com/sisu-network/cosmos-sdk/x/auth/legacy/v034"
 
 const (
 	ModuleName = "auth"

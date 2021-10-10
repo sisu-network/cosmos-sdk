@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/03-connection/simulation"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/03-connection/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/sisu-network/cosmos-sdk/simapp"
+	"github.com/sisu-network/cosmos-sdk/types/kv"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/03-connection/simulation"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/03-connection/types"
+	host "github.com/sisu-network/cosmos-sdk/x/ibc/core/24-host"
 )
 
 func TestDecodeStore(t *testing.T) {

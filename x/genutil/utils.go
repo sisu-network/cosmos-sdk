@@ -7,15 +7,15 @@ import (
 	"time"
 
 	"github.com/cosmos/go-bip39"
-	cfg "github.com/tendermint/tendermint/config"
-	tmed25519 "github.com/tendermint/tendermint/crypto/ed25519"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/privval"
-	tmtypes "github.com/tendermint/tendermint/types"
+	cfg "github.com/sisu-network/tendermint/config"
+	tmed25519 "github.com/sisu-network/tendermint/crypto/ed25519"
+	tmos "github.com/sisu-network/tendermint/libs/os"
+	"github.com/sisu-network/tendermint/p2p"
+	"github.com/sisu-network/tendermint/privval"
+	tmtypes "github.com/sisu-network/tendermint/types"
 
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptocodec "github.com/sisu-network/cosmos-sdk/crypto/codec"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
 )
 
 // ExportGenesisFile creates and writes the genesis configuration to disk. An

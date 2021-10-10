@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"testing"
 
+	ctypes "github.com/sisu-network/tendermint/rpc/core/types"
 	"github.com/stretchr/testify/suite"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/cosmos/cosmos-sdk/client/rpc"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/types/rest"
+	"github.com/sisu-network/cosmos-sdk/client/rpc"
+	"github.com/sisu-network/cosmos-sdk/codec/legacy"
+	clitestutil "github.com/sisu-network/cosmos-sdk/testutil/cli"
+	"github.com/sisu-network/cosmos-sdk/testutil/network"
+	"github.com/sisu-network/cosmos-sdk/types/rest"
 )
 
 type IntegrationTestSuite struct {

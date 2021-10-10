@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"strings"
 
+	tmtypes "github.com/sisu-network/tendermint/types"
 	"github.com/spf13/cobra"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/cosmos/cosmos-sdk/version"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/types/rest"
+	"github.com/sisu-network/cosmos-sdk/version"
+	authclient "github.com/sisu-network/cosmos-sdk/x/auth/client"
+	"github.com/sisu-network/cosmos-sdk/x/auth/types"
 )
 
 const (

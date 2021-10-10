@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
+	abci "github.com/sisu-network/tendermint/abci/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/23-commitment/types"
 )
 
 func (suite *MerkleTestSuite) TestVerifyMembership() {

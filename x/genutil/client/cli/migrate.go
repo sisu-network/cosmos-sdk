@@ -7,25 +7,25 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
+	tmjson "github.com/sisu-network/tendermint/libs/json"
 	"github.com/spf13/cobra"
-	tmjson "github.com/tendermint/tendermint/libs/json"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
-	v036 "github.com/cosmos/cosmos-sdk/x/genutil/legacy/v036"
-	v038 "github.com/cosmos/cosmos-sdk/x/genutil/legacy/v038"
-	v039 "github.com/cosmos/cosmos-sdk/x/genutil/legacy/v039"
-	v040 "github.com/cosmos/cosmos-sdk/x/genutil/legacy/v040"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/version"
+	v036 "github.com/sisu-network/cosmos-sdk/x/genutil/legacy/v036"
+	v038 "github.com/sisu-network/cosmos-sdk/x/genutil/legacy/v038"
+	v039 "github.com/sisu-network/cosmos-sdk/x/genutil/legacy/v039"
+	v040 "github.com/sisu-network/cosmos-sdk/x/genutil/legacy/v040"
+	"github.com/sisu-network/cosmos-sdk/x/genutil/types"
 )
 
 const flagGenesisTime = "genesis-time"
 
 // Allow applications to extend and modify the migration process.
 //
-// Ref: https://github.com/cosmos/cosmos-sdk/issues/5041
+// Ref: https://github.com/sisu-network/cosmos-sdk/issues/5041
 var migrationMap = types.MigrationMap{
 	"v0.36": v036.Migrate,
 	"v0.38": v038.Migrate, // NOTE: v0.37 and v0.38 are genesis compatible

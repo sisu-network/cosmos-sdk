@@ -5,12 +5,12 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	clientrest "github.com/cosmos/cosmos-sdk/client/rest"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
+	"github.com/sisu-network/cosmos-sdk/client"
+	clientrest "github.com/sisu-network/cosmos-sdk/client/rest"
+	"github.com/sisu-network/cosmos-sdk/client/tx"
+	codectypes "github.com/sisu-network/cosmos-sdk/codec/types"
+	"github.com/sisu-network/cosmos-sdk/types/rest"
+	"github.com/sisu-network/cosmos-sdk/x/auth/legacy/legacytx"
 )
 
 // BroadcastReq defines a tx broadcasting request.

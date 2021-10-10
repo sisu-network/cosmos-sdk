@@ -5,13 +5,13 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/sisu-network/cosmos-sdk/codec/legacy"
+	codectypes "github.com/sisu-network/cosmos-sdk/codec/types"
+	cryptotypes "github.com/sisu-network/cosmos-sdk/crypto/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	sdkerrors "github.com/sisu-network/cosmos-sdk/types/errors"
+	txtypes "github.com/sisu-network/cosmos-sdk/types/tx"
+	"github.com/sisu-network/cosmos-sdk/types/tx/signing"
 )
 
 // Interface implementation checks

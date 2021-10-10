@@ -11,11 +11,11 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	abci "github.com/sisu-network/tendermint/abci/types"
+	ctypes "github.com/sisu-network/tendermint/rpc/core/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	codectypes "github.com/sisu-network/cosmos-sdk/codec/types"
 )
 
 var cdc = codec.NewLegacyAmino()

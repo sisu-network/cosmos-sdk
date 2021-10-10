@@ -7,8 +7,8 @@ import (
 	"io/ioutil"
 	"sync"
 
-	"github.com/cosmos/cosmos-sdk/snapshots/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/sisu-network/cosmos-sdk/snapshots/types"
+	sdkerrors "github.com/sisu-network/cosmos-sdk/types/errors"
 )
 
 const (
@@ -38,7 +38,7 @@ type restoreDone struct {
 //
 // 1) In the future, ABCI should support streaming. Consider e.g. InitChain during chain
 //    upgrades, which currently passes the entire chain state as an in-memory byte slice.
-//    https://github.com/tendermint/tendermint/issues/5184
+//    https://github.com/sisu-network/tendermint/issues/5184
 //
 // 2) io.ReadCloser streams automatically propagate IO errors, and can pass arbitrary
 //    errors via io.Pipe.CloseWithError().

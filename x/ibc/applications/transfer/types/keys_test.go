@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/applications/transfer/types"
 )
 
 // Test that there is domain separation between the port id and the channel id otherwise an

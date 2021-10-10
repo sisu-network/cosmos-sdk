@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"io"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmstrings "github.com/tendermint/tendermint/libs/strings"
+	abci "github.com/sisu-network/tendermint/abci/types"
+	tmstrings "github.com/sisu-network/tendermint/libs/strings"
 	dbm "github.com/tendermint/tm-db"
 
-	snapshottypes "github.com/cosmos/cosmos-sdk/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	snapshottypes "github.com/sisu-network/cosmos-sdk/snapshots/types"
+	"github.com/sisu-network/cosmos-sdk/types/kv"
 )
 
 type Store interface {

@@ -4,17 +4,17 @@ import (
 	"context"
 	"fmt"
 
+	tmcfg "github.com/sisu-network/tendermint/config"
+	"github.com/sisu-network/tendermint/libs/cli"
+	"github.com/sisu-network/tendermint/libs/log"
 	"github.com/spf13/viper"
-	tmcfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/cli"
-	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	"github.com/sisu-network/cosmos-sdk/server"
+	"github.com/sisu-network/cosmos-sdk/testutil"
+	"github.com/sisu-network/cosmos-sdk/types/module"
+	genutilcli "github.com/sisu-network/cosmos-sdk/x/genutil/client/cli"
 )
 
 func ExecInitCmd(testMbm module.BasicManager, home string, cdc codec.JSONMarshaler) error {

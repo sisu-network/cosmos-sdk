@@ -1,17 +1,17 @@
 package keeper
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	clientkeeper "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/keeper"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	connectionkeeper "github.com/cosmos/cosmos-sdk/x/ibc/core/03-connection/keeper"
-	channelkeeper "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/keeper"
-	portkeeper "github.com/cosmos/cosmos-sdk/x/ibc/core/05-port/keeper"
-	porttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/05-port/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/sisu-network/cosmos-sdk/codec"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	capabilitykeeper "github.com/sisu-network/cosmos-sdk/x/capability/keeper"
+	clientkeeper "github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/keeper"
+	clienttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/02-client/types"
+	connectionkeeper "github.com/sisu-network/cosmos-sdk/x/ibc/core/03-connection/keeper"
+	channelkeeper "github.com/sisu-network/cosmos-sdk/x/ibc/core/04-channel/keeper"
+	portkeeper "github.com/sisu-network/cosmos-sdk/x/ibc/core/05-port/keeper"
+	porttypes "github.com/sisu-network/cosmos-sdk/x/ibc/core/05-port/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/types"
+	paramtypes "github.com/sisu-network/cosmos-sdk/x/params/types"
 )
 
 var _ types.QueryServer = (*Keeper)(nil)

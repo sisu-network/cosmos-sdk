@@ -5,11 +5,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	v038auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v038"
-	v039auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v039"
-	v039 "github.com/cosmos/cosmos-sdk/x/genutil/legacy/v039"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/sisu-network/cosmos-sdk/client"
+	v038auth "github.com/sisu-network/cosmos-sdk/x/auth/legacy/v038"
+	v039auth "github.com/sisu-network/cosmos-sdk/x/auth/legacy/v039"
+	v039 "github.com/sisu-network/cosmos-sdk/x/genutil/legacy/v039"
+	"github.com/sisu-network/cosmos-sdk/x/genutil/types"
 )
 
 var genAuthState = []byte(`{

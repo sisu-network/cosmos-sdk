@@ -9,23 +9,23 @@ import (
 	"testing"
 
 	"github.com/gogo/protobuf/proto"
+	tmcli "github.com/sisu-network/tendermint/libs/cli"
+	"github.com/sisu-network/tendermint/proto/tendermint/crypto"
+	"github.com/sisu-network/tendermint/rpc/client/http"
 	"github.com/stretchr/testify/suite"
-	tmcli "github.com/tendermint/tendermint/libs/cli"
-	"github.com/tendermint/tendermint/proto/tendermint/crypto"
-	"github.com/tendermint/tendermint/rpc/client/http"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/client/cli"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	"github.com/sisu-network/cosmos-sdk/crypto/hd"
+	"github.com/sisu-network/cosmos-sdk/crypto/keyring"
+	"github.com/sisu-network/cosmos-sdk/crypto/keys/ed25519"
+	clitestutil "github.com/sisu-network/cosmos-sdk/testutil/cli"
+	"github.com/sisu-network/cosmos-sdk/testutil/network"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	"github.com/sisu-network/cosmos-sdk/types/query"
+	banktestutil "github.com/sisu-network/cosmos-sdk/x/bank/client/testutil"
+	"github.com/sisu-network/cosmos-sdk/x/staking/client/cli"
+	stakingtestutil "github.com/sisu-network/cosmos-sdk/x/staking/client/testutil"
+	"github.com/sisu-network/cosmos-sdk/x/staking/types"
 )
 
 type IntegrationTestSuite struct {
@@ -1271,7 +1271,7 @@ func (s *IntegrationTestSuite) TestNewCmdUnbond() {
 
 // TestBlockResults tests that the validator updates correctly show when
 // calling the /block_results RPC endpoint.
-// ref: https://github.com/cosmos/cosmos-sdk/issues/7401.
+// ref: https://github.com/sisu-network/cosmos-sdk/issues/7401.
 func (s *IntegrationTestSuite) TestBlockResults() {
 	require := s.Require()
 	val := s.network.Validators[0]

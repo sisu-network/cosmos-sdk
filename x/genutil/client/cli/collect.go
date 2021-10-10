@@ -5,14 +5,14 @@ import (
 	"path/filepath"
 
 	"github.com/pkg/errors"
+	tmtypes "github.com/sisu-network/tendermint/types"
 	"github.com/spf13/cobra"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/sisu-network/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/client/flags"
+	"github.com/sisu-network/cosmos-sdk/server"
+	"github.com/sisu-network/cosmos-sdk/x/genutil"
+	"github.com/sisu-network/cosmos-sdk/x/genutil/types"
 )
 
 const flagGenTxDir = "gentx-dir"

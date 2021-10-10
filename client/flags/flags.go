@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strconv"
 
+	tmcli "github.com/sisu-network/tendermint/libs/cli"
 	"github.com/spf13/cobra"
-	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/sisu-network/cosmos-sdk/crypto/keyring"
 )
 
 const (

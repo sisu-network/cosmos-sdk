@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"testing"
 
+	tmrand "github.com/sisu-network/tendermint/libs/rand"
 	"github.com/stretchr/testify/require"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/store/cachekv"
-	"github.com/cosmos/cosmos-sdk/store/dbadapter"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/sisu-network/cosmos-sdk/store/cachekv"
+	"github.com/sisu-network/cosmos-sdk/store/dbadapter"
+	"github.com/sisu-network/cosmos-sdk/store/types"
 )
 
 func newCacheKVStore() types.CacheKVStore {

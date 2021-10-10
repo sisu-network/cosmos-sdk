@@ -1,10 +1,10 @@
 package keys
 
 import (
+	"github.com/sisu-network/tendermint/libs/cli"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/sisu-network/cosmos-sdk/client"
 )
 
 const flagListNames = "list-names"

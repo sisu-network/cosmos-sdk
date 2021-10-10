@@ -5,12 +5,12 @@ import (
 	"reflect"
 	"testing"
 
+	abci "github.com/sisu-network/tendermint/abci/types"
 	"github.com/stretchr/testify/suite"
-	abci "github.com/tendermint/tendermint/abci/types"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	testdata "github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	codectypes "github.com/sisu-network/cosmos-sdk/codec/types"
+	testdata "github.com/sisu-network/cosmos-sdk/testutil/testdata"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
 )
 
 type eventsTestSuite struct {

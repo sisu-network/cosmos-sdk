@@ -5,13 +5,13 @@ package v036
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v034distr "github.com/cosmos/cosmos-sdk/x/distribution/legacy/v034"
-	v034accounts "github.com/cosmos/cosmos-sdk/x/genaccounts/legacy/v034"
-	v034gov "github.com/cosmos/cosmos-sdk/x/gov/legacy/v034"
-	v034staking "github.com/cosmos/cosmos-sdk/x/staking/legacy/v034"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	v034distr "github.com/sisu-network/cosmos-sdk/x/distribution/legacy/v034"
+	v034accounts "github.com/sisu-network/cosmos-sdk/x/genaccounts/legacy/v034"
+	v034gov "github.com/sisu-network/cosmos-sdk/x/gov/legacy/v034"
+	v034staking "github.com/sisu-network/cosmos-sdk/x/staking/legacy/v034"
 
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/sisu-network/tendermint/crypto"
 )
 
 const (

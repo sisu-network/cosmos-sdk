@@ -6,19 +6,19 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/sisu-network/tendermint/libs/cli"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/sisu-network/cosmos-sdk/testutil"
+	"github.com/sisu-network/cosmos-sdk/version"
 )
 
 func TestNewInfo(t *testing.T) {
 	info := version.NewInfo()
-	want := fmt.Sprintf(`: 
-git commit: 
-build tags: 
+	want := fmt.Sprintf(`:
+git commit:
+build tags:
 %s`, fmt.Sprintf("go version %s %s/%s", runtime.Version(), runtime.GOOS, runtime.GOARCH))
 	require.Equal(t, want, info.String())
 }

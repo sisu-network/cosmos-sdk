@@ -7,12 +7,12 @@ import (
 	"strings"
 	"testing"
 
+	tmcli "github.com/sisu-network/tendermint/libs/cli"
 	"github.com/stretchr/testify/suite"
-	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/x/params/client/cli"
+	clitestutil "github.com/sisu-network/cosmos-sdk/testutil/cli"
+	"github.com/sisu-network/cosmos-sdk/testutil/network"
+	"github.com/sisu-network/cosmos-sdk/x/params/client/cli"
 )
 
 type IntegrationTestSuite struct {

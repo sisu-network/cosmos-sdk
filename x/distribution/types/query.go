@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
 )
 
 // QueryDelegatorTotalRewardsResponse defines the properties of
@@ -24,7 +24,7 @@ func (res QueryDelegatorTotalRewardsResponse) String() string {
 	out := "Delegator Total Rewards:\n"
 	out += "  Rewards:"
 	for _, reward := range res.Rewards {
-		out += fmt.Sprintf(`  
+		out += fmt.Sprintf(`
 	ValidatorAddress: %s
 	Reward: %s`, reward.ValidatorAddress, reward.Reward)
 	}

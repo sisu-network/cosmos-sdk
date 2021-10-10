@@ -3,13 +3,13 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/sisu-network/tendermint/libs/log"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/05-port/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
+	sdk "github.com/sisu-network/cosmos-sdk/types"
+	capabilitykeeper "github.com/sisu-network/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/sisu-network/cosmos-sdk/x/capability/types"
+	"github.com/sisu-network/cosmos-sdk/x/ibc/core/05-port/types"
+	host "github.com/sisu-network/cosmos-sdk/x/ibc/core/24-host"
 )
 
 // Keeper defines the IBC connection keeper

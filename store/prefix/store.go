@@ -5,9 +5,9 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cosmos/cosmos-sdk/store/cachekv"
-	"github.com/cosmos/cosmos-sdk/store/tracekv"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/sisu-network/cosmos-sdk/store/cachekv"
+	"github.com/sisu-network/cosmos-sdk/store/tracekv"
+	"github.com/sisu-network/cosmos-sdk/store/types"
 )
 
 var _ types.KVStore = Store{}
@@ -81,7 +81,7 @@ func (s Store) Delete(key []byte) {
 }
 
 // Implements KVStore
-// Check https://github.com/tendermint/tendermint/blob/master/libs/db/prefix_db.go#L106
+// Check https://github.com/sisu-network/tendermint/blob/master/libs/db/prefix_db.go#L106
 func (s Store) Iterator(start, end []byte) types.Iterator {
 	newstart := cloneAppend(s.prefix, start)
 
@@ -98,7 +98,7 @@ func (s Store) Iterator(start, end []byte) types.Iterator {
 }
 
 // ReverseIterator implements KVStore
-// Check https://github.com/tendermint/tendermint/blob/master/libs/db/prefix_db.go#L129
+// Check https://github.com/sisu-network/tendermint/blob/master/libs/db/prefix_db.go#L129
 func (s Store) ReverseIterator(start, end []byte) types.Iterator {
 	newstart := cloneAppend(s.prefix, start)
 
@@ -192,7 +192,7 @@ func (pi *prefixIterator) Error() error {
 	return nil
 }
 
-// copied from github.com/tendermint/tendermint/libs/db/prefix_db.go
+// copied from github.com/sisu-network/tendermint/libs/db/prefix_db.go
 func stripPrefix(key []byte, prefix []byte) []byte {
 	if len(key) < len(prefix) || !bytes.Equal(key[:len(prefix)], prefix) {
 		panic("should not happen")
