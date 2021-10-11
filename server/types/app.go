@@ -7,6 +7,7 @@ import (
 	"github.com/gogo/protobuf/grpc"
 	abci "github.com/sisu-network/tendermint/abci/types"
 	"github.com/sisu-network/tendermint/libs/log"
+	mempl "github.com/sisu-network/tendermint/mempool"
 	tmtypes "github.com/sisu-network/tendermint/types"
 	"github.com/spf13/cobra"
 	dbm "github.com/tendermint/tm-db"
@@ -46,6 +47,9 @@ type (
 
 		// RegisterTendermintService registers the gRPC Query service for tendermint queries.
 		RegisterTendermintService(clientCtx client.Context)
+
+		// MODIFIED:
+		GetPreAddTxToMempoolFunc(mempl.PreAddTxToMempoolFunc)
 	}
 
 	// AppCreator is a function that allows us to lazily initialize an
