@@ -234,6 +234,7 @@ func startInProcess(ctx *Context, clientCtx client.Context, appCreator types.App
 	}
 
 	app := appCreator(ctx.Logger, db, traceWriter, ctx.Viper)
+	options := app.GetTendermintOptions()
 
 	nodeKey, err := p2p.LoadOrGenNodeKey(cfg.NodeKeyFile())
 	if err != nil {
@@ -250,6 +251,7 @@ func startInProcess(ctx *Context, clientCtx client.Context, appCreator types.App
 		node.DefaultDBProvider,
 		node.DefaultMetricsProvider(cfg.Instrumentation),
 		ctx.Logger,
+		options...,
 	)
 	if err != nil {
 		return err
